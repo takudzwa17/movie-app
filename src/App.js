@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { GlobalStyle } from './GlobalStyle';
+import Header from './components/Header';
+import Home from './components/Home';
 
-function App() {
-  return(
-    <div className="App">
-      Code goes here
-    </div>
-  )
-}
+const App = () => (
+  <React.Fragment>
+    <Header />
+    <Home />
+    <GlobalStyle />
+  </React.Fragment>
+);
 
-export default App
+export default App;
